@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+:root {
+  --primary-color: #fe5e35;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: "Poppins";
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+.nav-item {
+  display: inline;
+  margin: auto 20px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.active-item {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px;
+}
+
+.left-section h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.left-section h1 {
+  font-size: 78px;
+  font-weight: bolder;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 200;
+}
+
+.sub-headlines {
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+.sub-headline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.sub-headline img {
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+.text {
+  color: #888;
+  margin-top: 60px;
+  padding-right: 40px;
+  font-size: 15px;
+}
+
+.action-btns {
+  margin-top: 60px;
+}
+
+.action-btns .action-btn {
+  margin-right: 20px;
+}
+
+.action-btn {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 10px 40px;
+  border-radius: 40px;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headphone-div {
+  position: relative;
+}
+
+.discount {
+  position: absolute;
+  top: 60%;
+  width: 30%;
+  filter: drop-shadow(6px 6px 1px  #000000);
+}
+
+.discount-content {
+  position: absolute;
+  top: 68%;
+  left: 8%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.discount-content h1 {
+  font-family: 'Fredoka One';
+  font-size: 3rem;
+}
+
+.dots {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.yellow-dot {
+  background-color: #ffae00;
+}
+
+.tomato-dot {
+  background-color: #fe5e35;
+}
+
+.black-dot {
+  background-color: #000;
+}
+
+
+/* Responsive  */
+
+@media screen and (max-width: 1440px) {
+  img[alt='headphone'] {
+      height: 500px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  img[alt='headphone'] {
+      height: 400px;
+  }
+  .left-section h3 {
+      font-size: 2rem;
+      font-weight: 400;
+  }
+  .left-section h1 {
+      font-family: 'Fredoka One';
+      font-size: 3rem;
+  }
+  .action-btn {
+      margin-bottom: 20px;
+  }
+  .discount {
+      height: 120px;
+      position: absolute;
+      top: 60%;
+  }
+  .discount-content {
+      position: absolute;
+      top: 68%;
+      left: 6%;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+  }
+  .discount-content h1 {
+      font-family: 'Fredoka One';
+      font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 40px;
+      gap: 20px;
+  }
+  nav>img:nth-child(1){
+    width: 20%;
+  }
+  .intro-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 40px;
+  }
+}
